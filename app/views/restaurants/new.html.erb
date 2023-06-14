@@ -1,0 +1,7 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.select :category, category: Restaurant::CATEGORYS %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.button :submit %>
+<% end %>
